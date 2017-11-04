@@ -1,0 +1,6 @@
+{:duct.core/environment :development
+ :duct.core/include ["spa/config"]
+
+ ;; :duct.module/sql
+ ;; {:database-url "jdbc:postgresql://localhost/postgres"}
+ }
