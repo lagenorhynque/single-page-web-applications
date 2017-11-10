@@ -6,9 +6,12 @@
  ;; :duct.module/sql {}
  :duct.module/cljs {:main spa.client}
 
- :duct.router/cascading
- [#ig/ref :spa.handler/example]
+ :duct.compiler/cljs {}
 
- :spa.handler/example
- {;; :db #ig/ref :duct.database/sql
-  }}
+ :duct.router/cascading
+ [#ig/ref :spa.handler/home]
+
+ :spa.handler/home {}
+ ;; :spa.handler/api
+ ;; {:db #ig/ref :duct.database/sql}
+ }

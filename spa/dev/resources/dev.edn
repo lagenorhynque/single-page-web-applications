@@ -1,6 +1,8 @@
 {:duct.core/environment :development
  :duct.core/include ["spa/config"]
 
+ :duct.server/figwheel {}
+
  ;; :duct.module/sql
  ;; {:database-url "jdbc:postgresql://localhost/postgres"}
  }

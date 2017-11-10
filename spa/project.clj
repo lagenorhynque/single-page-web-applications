@@ -3,12 +3,13 @@
   :url "http://example.com/FIXME"
   :min-lein-version "2.0.0"
   :jvm-opts ["--add-modules" "java.xml.bind"]
-  :dependencies [[org.clojure/clojure "1.9.0-beta4"]
-                 [duct/core "0.6.1"]
-                 [duct/module.logging "0.3.1"]
-                 [duct/module.web "0.6.3"]
+  :dependencies [[duct/core "0.6.1"]
                  [duct/module.cljs "0.3.1"]
-                 [duct/module.sql "0.4.1"]
+                 [duct/module.logging "0.3.1"]
+                 [duct/module.sql "0.4.2"]
+                 [duct/module.web "0.6.3"]
+                 [org.clojure/clojure "1.9.0-RC1"]
+                 [org.clojure/clojurescript "1.9.946"]
                  [org.postgresql/postgresql "42.1.4"]]
   :plugins [[duct/lein-duct "0.10.4"]]
   :main ^:skip-aot spa.main
@@ -23,6 +24,6 @@
    :profiles/dev {}
    :project/dev  {:source-paths   ["dev/src"]
                   :resource-paths ["dev/resources"]
-                  :dependencies   [[integrant/repl "0.2.0"]
-                                   [eftest "0.4.0"]
+                  :dependencies   [[eftest "0.4.0"]
+                                   [integrant/repl "0.2.0"]
                                    [kerodon "0.9.0"]]}})
